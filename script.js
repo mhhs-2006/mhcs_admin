@@ -20,6 +20,7 @@ const db = firebase.firestore();
 // ③ 허가된 관리자 이메일 목록
 const ALLOWED_ADMINS = [
   "munhyungove@gmail.com",
+  "schoolgamasot@gmail.com"
 ];
 
 // ③-1 공통 상수 (건의 유형 / 처리 현황)
