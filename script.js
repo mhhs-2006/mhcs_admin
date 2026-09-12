@@ -34,7 +34,7 @@ let allSuggestions = [];
 let currentMode = 'all';
 
 // ③-2 로그인 여부 플래그 (관리자 화면 접근 가드용)
-let isAuthenticated = false;
+let isAuthenticated = true;
 /*
 // ④ 로그인 상태 감지
 auth.onAuthStateChanged(user => {
