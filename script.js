@@ -35,7 +35,7 @@ let currentMode = 'all';
 
 // ③-2 로그인 여부 플래그 (관리자 화면 접근 가드용)
 let isAuthenticated = false;
-
+/*
 // ④ 로그인 상태 감지
 auth.onAuthStateChanged(user => {
   if (user) {
@@ -53,15 +53,15 @@ auth.onAuthStateChanged(user => {
       auth.signOut();
     }
   } else {
-   /* isAuthenticated = false;
+   isAuthenticated = false;
     document.getElementById('loginScreen').style.display = 'flex';
     document.getElementById('homeScreen').style.display = 'none';
     document.getElementById('listScreen').style.display = 'none';
     document.getElementById('statsScreen').style.display = 'none';
-    document.getElementById('exportScreen').style.display = 'none'; */
+    document.getElementById('exportScreen').style.display = 'none';
   }
 });
-
+*/
 // ④-1 로그아웃 상태거나 인증 전이면 무조건 로그인 화면으로 되돌리는 가드
 // (관리자 화면으로 진입하는 모든 경로 - 메뉴 클릭, 브라우저 뒤로가기/캐시 복원 등 -
 //  이 가드를 통과해야만 실제로 화면이 전환됨)
