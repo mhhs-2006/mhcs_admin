@@ -53,12 +53,12 @@ auth.onAuthStateChanged(user => {
       auth.signOut();
     }
   } else {
-    isAuthenticated = false;
+   /* isAuthenticated = false;
     document.getElementById('loginScreen').style.display = 'flex';
     document.getElementById('homeScreen').style.display = 'none';
     document.getElementById('listScreen').style.display = 'none';
     document.getElementById('statsScreen').style.display = 'none';
-    document.getElementById('exportScreen').style.display = 'none';
+    document.getElementById('exportScreen').style.display = 'none'; */
   }
 });
 
@@ -82,12 +82,12 @@ window.addEventListener('pageshow', event => {
   }
 });
 
-/*
+
 // [임시 코드] 바로 홈 화면으로 진입 및 데이터 로드
 document.getElementById('loginScreen').style.display = 'none'; // 로그인 디자인을 확인하고 싶다면 'flex'로 변경하세요!
 showHome();
 loadSuggestions();
-*/
+
 // ⑤ Google 팝업 로그인
 async function handleGoogleLogin() {
   const provider = new firebase.auth.GoogleAuthProvider();
